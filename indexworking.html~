@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Image Map Sample</title>
+	</head>
+	<body>
+	<img src="main-page.png" alt="mainpage" usemap="#mainpage" />
+		<map name='mainpage'>
+			<area shape='rect' coords='43,70,143,170' href="#"/>
+			<area shape='circle' coords='363,252,202' href="#"/>
+			<area shape='rect' coords='20,217,142,393' href="#"/>
+			<area shape='rect' coords='563,20,695,157' href="#"/>
+			<area shape='rect' coords='572,261,695,493' href="#"/>
+			<area shape='rect' coords='23,428,249,552' href="#"/>
+		</map>
+	</body>
+</html>
