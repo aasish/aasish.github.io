@@ -26,11 +26,11 @@ h2{
 }
 
 #wrapper a{
-	display:block;
-	font-size:3.2em;
+	#display:block;
+	#font-size:3.2em;
 	padding-top:20px;
-	color:#FFF;
-	text-decoration:none;
+	color:#3f3f3f;
+	text-decoration:bold;
 	text-align:center;
 }
 
@@ -49,7 +49,7 @@ h2{
 }
 
 #tabs > ul{
-	font: 2em;
+	#font: 2em;
 	list-style:none;
 }
 
@@ -106,4 +106,46 @@ h2{
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(90%,#FFFFFF), color-stop(100%,#e4e9ed)); /* webkit */
 	margin:0;
 	color:#333;
+}
+
+/* .tabpage { */
+/*     background-color:#ffffff; */
+/*     padding:10px; */
+/*     border:1px solid #464c54;  */
+/*     font-family:Arial, Helvetica, sans-serif; */
+/*     background-image:url(images/tabpage_bottom.jpg); */
+/*     background-repeat:repeat-x;  */
+/*     background-position:bottom; */
+/* } */
+/* #tabpage_2, #tabpage_3 { display:none; } */
+
+/* .tabpage ul { */
+/*     margin:0px; */
+/*     padding:0px 20px 0px 20px; */
+/* } */
+.tabpage ul li {
+    list-style:none;
+    #border-bottom:1px solid #d6dde0;
+    padding-top:15px;
+    #padding-bottom:15px;
+    #font-size:13px;
+}
+.tabpage ul li:last-child {
+    border-bottom:none;
+}
+.tabpage ul li a {
+    text-decoration:underline;
+    color:#555555;
+}
+/* .tabpage ul li a small { */
+/*     color:#8b959c; */
+/*     font-size:9px; */
+/*     text-transform:uppercase; */
+/*     font-family:Verdana, Arial, Helvetica, sans-serif; */
+/*     position:relative; */
+/*     left:4px; */
+/*     top:0px; */
+/* } */
+.tabpage ul li a:hover {
+    color:#a59c83;
 }
