@@ -122,9 +122,11 @@ h2{
 /*     background-repeat:repeat-x;  */
 /*     background-position:bottom; */
 /* } */
- #tabpage_1{padding-left:30px;
-	   margin:20px 10px 40px 80px} 
 
+
+#tabpage_1{padding-left:30px;
+	   margin:20px 10px 40px 80px
+	   font-size:30px} 
 
 #tabpage_2 ul li {
     margin: 10 auto;
@@ -151,6 +153,8 @@ h2{
     #padding-bottom:-10px;
     font-size:15px;
 }
+
+
 .tabpage ul li:last-child {
     border-bottom:none;
 }
