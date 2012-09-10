@@ -14,7 +14,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="css/normalize.css"> 
         <link rel="stylesheet" href="css/main.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -29,8 +29,8 @@
         <li id="tabHeader_1">Home</li>
         <li id="tabHeader_2">Publications</li>
         <li id="tabHeader_3">Tools</li>
-	<li id="tabHeader_4">Drawings</li>
-	<li id="tabHeader_5">Photos</li>
+	<li id="tabHeader_4">Sketching</li>
+	<li id="tabHeader_5">Photography</li>
       </ul>
     </div>
     <div id="tabscontent">
@@ -62,8 +62,10 @@
 	   <img class="img" src="media/profile_picture.jpg" width=150 height=150 alt="Photo of Aasish Pappu"/> 
 	   </td>
 	   <td>
-	   <img class="img" src="media/social.png" width=90% height=50% alt="Photo of Aasish Pappu"/> 
-	   </td>
+	    
+ 	   <img class="img" src="media/social.png" width=90% height=50% alt="Photo of Aasish Pappu" usemap="#social"/>	  
+	     <map name="social"><area shape="rect" alt="github" title="" coords="92,40,586,158" href="http://github.com" target="_blank" /><area shape="rect" alt="googleplus" title="" coords="10,194,218,430" href="http://plus.google.com" target="_blank" /><area shape="rect" alt="twitter" title="" coords="254,186,452,346" href="www.twitter.com" target="_blank" /><area shape="poly" alt="bitbucket" title="" coords="502,160,502,486,692,486,692,160" href="bitbucket.org" target="_blank" /><area shape="rect" alt="cmu email" title="" coords="258,376,418,500" href="www.cs.cmu.edu" target="_blank" /><!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) --></map>
+	  </td>
 	  </tr>
 	  </table>	
       </div>
@@ -84,32 +86,40 @@
       <div class="tabpage" id="tabpage_3">
         <h2>Tools</h2>
 	<h3>Research Software</h3>
-	<h4> I am an active developer of Olympus framework. Some of the software that I wrote based on Olympus framework</h4>
+	<h4> I am an active developer of Olympus Dialog framework. Some of the software listed below is based on Olympus</h4>
 	<ul>
 	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/teamtalk/trunk">TeamTalk</a> - Robot Navigation Dialog Framework: Talk with robots in a simulated 3D environment </br>
-Requirements: Windows, Visual Studio, Perl</li> </br>
-	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/kinectoly">Kinect port </a> for Olympus Dialog Framework: Talk with robots hands free</li> </br>
-	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/networkoly">Network based audio input </a> for Olympus Dialog Framework: Low-fi solution to run dialog system on remote server and capture audio at the client </li> </br>
+Requirements: Windows, Visual Studio, and Perl</li> 
+	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/kinectoly">Kinect port </a> for Olympus Dialog Framework: Talk with robots hands free</br>
+Requirements: Windows, Visual Studio, Kinect SDK and Perl</li> 
+	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/networkoly">Network based audio input </a> for Olympus Dialog Framework: Low-fi solution to run dialog system on remote server and capture audio at the client </br> Requirements: Windows, Visual Studio, and Perl</li> 
 	</ul>
-	
+	</br>
 	<h3>Fun Software</h3>
 	<ul>
-	  <li> <a href="http://tts.speech.cs.cmu.edu/apappu/fs-nav/">Web based Speech enabled Virtual Chauffeur</a></li> </br>
-	  <li> <a href="http://tts.speech.cs.cmu.edu/apappu/fs-demo/">Web based Speech enabled Chatbot</a> </li> </br>
-	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/Talkie/"> Desktop based News gossip speech bot </a> </li> </br>
-	  <li> <a href="https://github.com/aasish/pocketsphinxandroid/"> Pocketsphinx Android App [source] </a> <a href="https://github.com/aasish/pocketsphinxandroid/blob/master/bin/PocketSphinxAndroidDemo.apk"> [apk] </a> </li>  </br>
-	  <li> Tiny speech recognizer for digits (Python) </li> </br>
+	  <li> <a href="http://tts.speech.cs.cmu.edu/apappu/fs-nav/">Web based Speech enabled Virtual Chauffeur</a> - Experience driving in a speech enabled autonomous car <a href="https://bitbucket.org/aasish/streetview_talkie">[source code]</a> </li>
+	  <li> <a href="http://tts.speech.cs.cmu.edu/apappu/fs/">Web based Speech enabled Chatbot</a>: Talk about random stuff </li>
+	  <li> <a href="http://karybdis2.speech.cs.cmu.edu/svn/repos/olympus/branches/Talkie/"> Desktop based News gossip speech bot </a> - Requires Windows, Visual Studio, and Perl</li>
+	  <li> <a href="https://github.com/aasish/pocketsphinxandroid/"> Pocketsphinx Android App [source] </a> <a href="https://github.com/aasish/pocketsphinxandroid/blob/master/bin/PocketSphinxAndroidDemo.apk"> [apk] </a> - <a href="http://www.speech.cs.cmu.edu/pocketsphinx/">Pocketsphinx</a> is a speech recognition engine for small devices </li> 
 	</ul>
-	 
+	</br>
+	<h3>Navigation Corpus</h3>
+	<ul>
+	  <li><a href="http://tts.speech.cs.cmu.edu/apappu/navagati/">Navagati Corpus</a> - A corpus of spoken route instructions collected at CMU campus. Paper describing the corpus and experiments related to it <a href="http://www.cs.cmu.edu/~apappu/pubs/pappu2011.pdf">[pdf]</a>.
+	    
+	</ul>
       </div>
       <div class="tabpage" id="tabpage_4">
-        <h2>Drawings</h2>
- 
+        <h2>Sketching</h2>
+	<center>
       <embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="600" height="400" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F104822843734497940693%2Falbumid%2F5520513127501676977%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCO7umZLbidT_Qg%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+      </center>
       </div>
       <div class="tabpage" id="tabpage_5">
-        <h2>Photos</h2>
-	<embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="600" height="400" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F104822843734497940693%2Falbumid%2F5485891101862370977%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCPyZ-v7aysjICA%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+        <h2>Photography</h2>
+	<center>
+	<embed type="application/x-shockwave-flash" src="https://picasaweb.google.com/s/c/bin/slideshow.swf" width="600" height="400" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F104822843734497940693%2Falbumid%2F5786575307734284465%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	</center>
       </div>
     </div>
   </div>
