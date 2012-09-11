@@ -1,5 +1,10 @@
 window.onload=function() {
 
+    var page = getUrlVars()["q"];
+    var page_click = getUrlVars()["q"];
+    if(page == undefined)
+	page = "1";
+    //alert(page);
   // get tab container
   	var container = document.getElementById("tabContainer");
 		var tabcon = document.getElementById("tabscontent");
@@ -25,6 +30,11 @@ window.onload=function() {
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].onclick=displayPage;
     }
+
+    if(page_click!=undefined){
+	
+	tabs[parseInt(page_click)-1].click();
+    }
 }
 
 // on click of one of tabs
@@ -35,8 +45,17 @@ function displayPage() {
   document.getElementById("tabpage_" + current).style.display="none";
 
   var ident = this.id.split("_")[1];
+   // alert(ident);
   //add class of activetabheader to new active tab and show contents
   this.setAttribute("class","tabActiveHeader");
   document.getElementById("tabpage_" + ident).style.display="block";
   this.parentNode.setAttribute("data-current",ident);
+}
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
 }
