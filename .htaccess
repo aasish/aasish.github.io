@@ -1,0 +1,23 @@
+order deny,allow
+allow from all
+
+ExpiresActive On
+ExpiresByType image/gif "now plus 1 month"
+ExpiresByType image/png "now plus 1 month"
+ExpiresByType image/jpeg "now plus 1 month"
+ExpiresByType image/x-icon "now plus 1 month"
+
+
+ExpiresByType text/css "now plus 2 days"
+ExpiresByType application/javascript "now plus 1 week"
+
+ExpiresByType text/html "now plus 1 day"
+ExpiresByType text/plain "now plus 1 day"
+
+AddCharset UTF-8 .html
+
+<IfModule mod_headers.c>
+   <FilesMatch "\.(js|css|xml|gz)$">
+     Header append Vary: Accept-Encoding
+   </FilesMatch>
+</IfModule>
