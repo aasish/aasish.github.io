@@ -8,12 +8,13 @@ ExpiresByType image/jpeg "now plus 1 month"
 ExpiresByType image/x-icon "now plus 1 month"
 
 
-ExpiresByType text/css "now plus 2 days"
+ExpiresByType text/css "now plus 1 month"
 ExpiresByType application/javascript "now plus 1 week"
 
 ExpiresByType text/html "now plus 1 day"
 ExpiresByType text/plain "now plus 1 day"
 
+ExpiresByType application/x-shockwave-flash "now plus 1 month"
 AddCharset UTF-8 .html
 
 <IfModule mod_headers.c>
